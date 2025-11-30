@@ -1,3 +1,36 @@
-Multi-Class Text Classification Using Word Representations and ML/NN Models
+# Multiplayer Fish Eating Game using OpenGL in Python
 
-This project presents a comparative study of 22 machine learning and neural network models-including Logistic Regression, Naive Bayes, Random Forest, DNN, RNN, GRU, LSTM, and their bidirectional variants-for multi-class text classification using BoW, TF-IDF, GloVe, and Skip-gram embeddings.The work highlights key performance differences between traditional ML approaches and advanced neural network architectures.
+A real-time 2-player fish game developed in Python using OpenGL. Players control their fish in a dynamic aquarium, collect green points to grow and score, and avoid red points that reduce the opponent's score. The game features interactive controls, animated bubbles, wavy water, and an engaging gameplay experience.
+
+
+
+## Features
+
+- **Multiplayer Gameplay**
+  - Player 1: `W`, `A`, `S`, `D` keys
+  - Player 2: Arrow keys
+- **Point Collection**
+  - Green points increase fish size and score
+  - Red points decrease opponent’s score
+- **Dynamic Aquarium**
+  - Animated bubbles, wavy water, and plants
+- **Interactive Buttons**
+  - Reset, Pause/Play, and Exit
+- **Game Over Conditions**
+  - A player wins when their score reaches 10 or the opponent’s score falls below 0
+
+
+
+## Tools & Technologies
+
+- **Programming Language:** Python  
+- **Graphics Library:** PyOpenGL (OpenGL, GLUT, GLU)  
+- **Platform:** Windows / Linux / Mac
+
+
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   https://github.com/nowshinreza/Multiplayer-Player-Fish-Eating-Game-using-OpenGL-in-Python.git
