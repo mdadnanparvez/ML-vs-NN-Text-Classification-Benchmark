@@ -33,4 +33,4 @@ A real-time 2-player fish game developed in Python using OpenGL. Players control
 
 1. Clone the repository:
    ```bash
-   https://github.com/nowshinreza/Multiplayer-Player-Fish-Eating-Game-using-OpenGL-in-Python.git
+   https://github.com/mdadnanparvez/ML-vs-NN-Text-Classification-Benchmark.git
