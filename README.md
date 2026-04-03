@@ -1,36 +1,54 @@
-# Multiplayer Fish Eating Game using OpenGL in Python
+# Multi-Class Text Classification (NLP)
 
-A real-time 2-player fish game developed in Python using OpenGL. Players control their fish in a dynamic aquarium, collect green points to grow and score, and avoid red points that reduce the opponent's score. The game features interactive controls, animated bubbles, wavy water, and an engaging gameplay experience.
+This project explores multi-class text classification using various word representation techniques combined with both Machine Learning (ML) and Neural Network (NN) models.
 
+##  Overview
+- Compared **4 text representation methods**:
+  - Bag of Words (BoW)
+  - TF-IDF
+  - GloVe (pre-trained embeddings)
+  - Word2Vec (Skip-gram)
 
+- Evaluated **22 model combinations**:
+  - ML: Logistic Regression, Naive Bayes, Random Forest
+  - NN: DNN, RNN, GRU, LSTM, Bi-directional variants
 
-## Features
+##  Pipeline
+1. **EDA**
+   - Class distribution, text length, n-grams
+2. **Preprocessing**
+   - Lowercasing, tokenization, stopword removal
+3. **Feature Engineering**
+   - BoW, TF-IDF, GloVe, Skip-gram
+4. **Model Training**
+   - ML + Deep Learning architectures
+5. **Evaluation**
+   - Accuracy, F1-Macro, F1-Weighted
 
-- **Multiplayer Gameplay**
-  - Player 1: `W`, `A`, `S`, `D` keys
-  - Player 2: Arrow keys
-- **Point Collection**
-  - Green points increase fish size and score
-  - Red points decrease opponent’s score
-- **Dynamic Aquarium**
-  - Animated bubbles, wavy water, and plants
-- **Interactive Buttons**
-  - Reset, Pause/Play, and Exit
-- **Game Over Conditions**
-  - A player wins when their score reaches 10 or the opponent’s score falls below 0
+##  Key Results
+-  Best Model: **GloVe + LSTM**
+  - Accuracy: **71.38%**
+  - F1 Score: **0.7081**
+-  Worst Model: TF-IDF + Random Forest (~48.9%)
 
+ Sequential models + contextual embeddings significantly outperformed frequency-based approaches. :contentReference[oaicite:0]{index=0}
 
+## Insights
+- Context-aware embeddings (GloVe) improve performance
+- LSTM captures long-term dependencies effectively
+- Logistic Regression is the strongest ML baseline
+- SimpleRNN suffers from vanishing gradient issues
 
-## Tools & Technologies
+##  Tech Stack
+- Python
+- Scikit-learn
+- TensorFlow / Keras
+- NLP preprocessing (NLTK)
 
-- **Programming Language:** Python  
-- **Graphics Library:** PyOpenGL (OpenGL, GLUT, GLU)  
-- **Platform:** Windows / Linux / Mac
+## Future Work
+- Transformer-based models (BERT, etc.)
+- Handling class imbalance
+- Domain-specific embeddings
 
-
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   https://github.com/mdadnanparvez/ML-vs-NN-Text-Classification-Benchmark.git
+## 📎 Project Report
+See full documentation: [Report.pdf](./Report.pdf)
